@@ -35,8 +35,8 @@ class LoginForm extends DbConn
             if (password_verify($mypassword, $result['password']) && $result['verified'] == '1') {
                 //Success! Register $myusername, $mypassword and return "true"
                 $success = 'true';
-                    session_start();
-                    $_SESSION['username'] = $myusername;
+                session_start();
+                $_SESSION['username'] = $myusername;
             } elseif (password_verify($mypassword, $result['password']) && $result['verified'] == '0') {
                 //Account not yet verified
                 $success = "<div class=\"alert alert-danger alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>Your account has been created, but you cannot log in until it has been verified</div>";
