@@ -23,11 +23,11 @@ $from_name = 'Test Email'; //"From name" displayed on email
 //Find specific server settings at https://www.arclab.com/en/kb/email/list-of-smtp-and-pop3-servers-mailserver-list.html
 $mailServerType = 'smtp';
 //IF $mailServerType = 'smtp'
-$smtp_server = 'smtp.mail.domain.com';
+$smtp_server = 'smtp.mail.domain.com';  //smtp.gmail.com if gmail
 $smtp_user = 'youremail@domain.com';
 $smtp_pw = 'yourEmailPassword';
-$smtp_port = 465; //465 for ssl, 587 for tls, 25 for other
-$smtp_security = 'ssl';//ssl, tls or ''
+$smtp_port = 465; //465 for ssl, 587 for tls, 25 for other    //gmail 587	
+$smtp_security = 'ssl';//ssl, tls or ''						//gmail tls
 //HTML Messages shown before URL in emails (the more
 $verifymsg = 'Click this link to verify your new account!'; //Verify email message
 $active_email = 'Your new account is now active! Click this link to log in!';//Active email message
