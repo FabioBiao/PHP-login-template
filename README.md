@@ -39,7 +39,7 @@ CREATE TABLE `loginAttempts` (
     $db_name = "login"; // Database name
 
 ```
-
+### Setup the `login/config.php` file
 
 ## This uses PHPMailer
 Inside login paste create a "scripts" folder and paste [PHPMailer](https://github.com/PHPMailer/PHPMailer/tree/9e4b8fb3deb7d9cfa515c04cec41f71bc37ce9a9)
